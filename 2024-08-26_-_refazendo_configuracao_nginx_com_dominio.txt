@@ -1,0 +1,18 @@
+ 1  # ping django.edsoncopque.com #1:
+ 2  # cloudflare.com #2:
+ 3  # DNS>Records: Type (A), Name (django), Contente (IP). #3:
+ 4  # ssh gnulinuxdebian@django.edsoncopque.com #4:
+ 5  # Agora ele acessou o "nginx-http.txt" (offline) e onde tem __YOUR_DOMAIN_OR_IP__ inseriu seu endereço web (django.edsoncopque.com).
+ 6  # cd /etc/nginx/sites-available/ #5:
+ 7  # cd /etc/nginx/sites-enabled/ #6:
+ 8  # sudo rm schedule #7:
+ 9  # cd ..
+10  # /etc/nginx/sites-available: sudo mv schedule scheduleip #8:
+11  # nano scheduledomain #9:
+12  # sudo ln -s /etc/nginx/sites-available/scheduledomain /etc/nginx/sites-enabled/scheduledomain #10:
+13  # sudo nginx -t #11:
+14  # sudo systemctl restart enginx #error  #12: #13:
+15  # cd ~/scheduleapp/
+16  # nano schedule/local_settings.py #14: #15:
+17  # sudo systemctl restart schedule
+18  # sudo systemctl restart nginx
