@@ -26,3 +26,5 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+# Edson Copque | https://linktr.ee/edsoncopque
